@@ -27,6 +27,8 @@ var dep$1 = /*#__PURE__*/Object.freeze({
 
 var require$$0 = /*@__PURE__*/getAugmentedNamespace(dep$1);
 
+// importDefaultHelper from TypeScript
+// https://github.com/microsoft/TypeScript/blob/663b19fe4a7c4d4ddaa61aedadd28da06acd27b6/src/compiler/factory/emitHelpers.ts#L810-L819
 var __importDefault = (commonjsGlobal && commonjsGlobal.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { "default": mod };
 };
