@@ -1,0 +1,19 @@
+{
+  "name": "cjs-require-esm-tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npm run build:esbuild && npm run build:rollup",
+    "build:esbuild": "esbuild main.cjs --bundle --format=esm > bundles/esbuild.mjs",
+    "build:rollup": "rollup -c rollup.config.mjs",
+
+    "pretest": "npm run build",
+    "test": "echo 'rollup:' && node bundles/rollup.mjs && echo 'esbuild:' && node bundles/esbuild.mjs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "esbuild": "^0.12.5",
+    "rollup": "^2.50.5"
+  }
+}
