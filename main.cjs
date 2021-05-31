@@ -5,4 +5,5 @@ var dep = __importDefault(require("./dep.mjs"));
 
 console.log('dep', dep)
 console.log('dep.default', dep.default)
+console.log('dep.name', dep.name)
 console.log()

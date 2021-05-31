@@ -34,6 +34,7 @@ var dep = __importDefault(require$$0);
 
 console.log('dep', dep);
 console.log('dep.default', dep.default);
+console.log('dep.name', dep.name);
 console.log();
 
 export default main;

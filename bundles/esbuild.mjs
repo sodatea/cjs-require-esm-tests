@@ -33,6 +33,7 @@ var require_main = __commonJS({
     var dep = __importDefault((init_dep(), dep_exports));
     console.log("dep", dep);
     console.log("dep.default", dep.default);
+    console.log("dep.name", dep.name);
     console.log();
   }
 });
